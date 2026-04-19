@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.securefile.mapper.FileRecipientMapper">
+
+    <!-- 批量插入接收者 -->
+    <insert id="batchInsert" parameterType="java.util.List">
+        INSERT INTO recipient (
+        file_id,
+        recipient_user_id,
+        wrapped_aes_key,
+        created_at
+        ) VALUES
+        <foreach collection="list" item="item" separator=",">
+            (
+            #{item.fileId},
+            #{item.recipientUserId},
+            #{item.wrappedAesKey},
+            #{item.createdAt}
+            )
+        </foreach>
+    </insert>
+
+</mapper>
