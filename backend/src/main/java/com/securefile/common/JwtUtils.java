@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class JwtUtils {
     // 签名密钥
-    private static final byte[] KEY = "mZ7qP2vS5hL8nB4dX1kC9tJ0wY6fR3zG2aV1uI7oP9kL0jH5gT4sE2rD1fC8vB9".getBytes();
+    private static final byte[] KEY = "".getBytes();
 
     public static String createToken(Long userId, String username) {
         Map<String, Object> map = new HashMap<>();
