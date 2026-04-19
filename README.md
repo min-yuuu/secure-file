@@ -1,4 +1,9 @@
 # SecureFile（端到端加密文件传输）
+![Java](https://img.shields.io/badge/Java-8-007396?logo=java)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7-6DB33F?logo=springboot)
+![Vue](https://img.shields.io/badge/Vue-3-4FC08D?logo=vuedotjs)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?logo=mysql)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 用户注册登录、本地 RSA 密钥、分片上传、按接收方加密的文件分发、下载解密与传输审计。服务端仅存密文分片与元数据，不持有用户私钥。
 
